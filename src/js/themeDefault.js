@@ -6,6 +6,7 @@ export const setThemDefault = () => {
     if ((theme === null) || (theme === Theme.LIGHT)) {
         localStorage.setItem('theme', Theme.LIGHT);
         bodyTheme.classList.add(Theme.LIGHT);
+        themeSwitchToggle.checked = false;
     }
 
     if (theme === Theme.DARK) {
