@@ -1,17 +1,9 @@
-import { setThemDefault } from './themeDefault.js';
-import { onThemeSwitch }  from './themeSwitch.js';
-import { markup }         from './markup.js';
-
-export const Theme = {
-    LIGHT: "light-theme",
-    DARK : "dark-theme"
-};
+import { setThemeDefault }   from './themeDefault.js';
+import { onThemeSwitch }     from './themeSwitch.js';
+import { markup }            from './markup.js';
+import { themeSwitchToggle } from './refs.js';
 // зміна теми
-export const themeSwitchToggle = document.querySelector('#theme-switch-toggle');
-export const bodyTheme = document.querySelector('body');
-
-setThemDefault();
-
+setThemeDefault();
 themeSwitchToggle.addEventListener('change', onThemeSwitch);
 // створюємо розмітку
 const menuList = document.querySelector('.js-menu');

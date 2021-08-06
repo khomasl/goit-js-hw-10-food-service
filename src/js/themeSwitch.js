@@ -1,4 +1,5 @@
-import {Theme, bodyTheme} from './app.js';
+import { Theme } from './theme.js';
+import { bodyTheme } from './refs.js';
 
 export const onThemeSwitch = () => {
     const theme = localStorage.getItem('theme');
